@@ -62,3 +62,17 @@ func Test_jump(t *testing.T) {
 		})
 	}
 }
+
+func Benchmark_jump(b *testing.B) {
+	nums := []int{3, 4, 3, 1, 0, 7, 0, 3, 0, 2, 0, 3}
+	for i := 0; i < b.N; i++ {
+		jump(nums)
+	}
+}
+
+func Benchmark_jump2(b *testing.B) {
+	nums := []int{3, 4, 3, 1, 0, 7, 0, 3, 0, 2, 0, 3}
+	for i := 0; i < b.N; i++ {
+		jump2(nums)
+	}
+}
