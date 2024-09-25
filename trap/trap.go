@@ -2,7 +2,6 @@ package trap
 
 // Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
 
-// trap calculates the amount of trapped rainwater given an elevation map.
 func trap(height []int) int {
 	if len(height) < 3 {
 		return 0
@@ -119,17 +118,3 @@ func computeRightMax(height []int, ch chan []int) {
 	}
 	ch <- rightMax
 }
-
-// func max(a, b int) int {
-// 	if a > b {
-// 		return a
-// 	}
-// 	return b
-// }
-//
-// func min(a, b int) int {
-// 	if a < b {
-// 		return a
-// 	}
-// 	return b
-// }
