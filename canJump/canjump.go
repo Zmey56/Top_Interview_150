@@ -29,6 +29,7 @@ func canJump(nums []int) bool {
 		}
 
 	}
+	log.Print(jump)
 	return false
 }
 
